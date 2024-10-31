@@ -1,0 +1,67 @@
+
+        
+package projetoescola;
+import java.util.List;
+import java.util.ArrayList;
+
+public class Curso  {
+    private String nome, descricao,codigo;
+    private int ano_inicio;
+    private Professor professor;
+    private List<Professor> professores;
+     private List<Aluno> alunos;
+    
+
+    public Curso(String nome, String descricao, String codigo, int ano_inicio) {
+        this.nome = nome;
+        this.descricao = descricao;
+        this.codigo = codigo;
+        this.ano_inicio = ano_inicio;
+        this.alunos = new ArrayList<>();
+        this.professores = new ArrayList<>();
+    }
+    
+    //metodo para setar professor 
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
+    }
+//
+    public List<Professor> getProfessor() {
+        return professores;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public List<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    
+    
+    public String getCodigo() {
+        return codigo;
+    }
+
+    public int getAno_inicio() {
+        return ano_inicio;
+    }
+    
+    
+    public void adicionarAluno(Aluno aluno) {
+        this.alunos.add(aluno);
+    }
+    
+    public void adicionarProfessor (Professor professor){
+        this.professores.add(professor);
+    }
+    
+    
+    
+    
+}
