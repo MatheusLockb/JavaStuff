@@ -1,0 +1,62 @@
+
+package projetoescola;
+
+public class Aluno extends Pessoa {
+    private String  serie, data_inscricao,num_matricula;
+    private int idade;
+    private double nota1, nota2;
+
+    public Aluno(String nome, String cpf, String num_matricula, String serie, String data_inscricao, int idade) {
+        this.nome = nome;
+        this.cpf= cpf;
+        this.num_matricula = num_matricula;
+        this.serie = serie;
+        this.data_inscricao = data_inscricao;
+        this.idade = idade;
+        
+    }
+
+    public String getNum_matricula() {
+        return num_matricula;
+    }
+
+    public String getData_inscricao() {
+        return data_inscricao;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+    
+    
+ // public boolean temMesmoId(Aluno outroAluno) {
+       // return this.num_matricula == outroAluno.getNum_matricula();
+   // }
+    
+  
+  // MÉTODOS SET E GET PARA NOTAS
+  
+  public void setNota1(double nota1) {
+        this.nota1 = nota1;
+    }
+
+    public void setNota2(double nota2) {
+        this.nota2 = nota2;
+    }
+
+    public double getNota1() {
+        return nota1;
+    }
+
+    public double getNota2() {
+        return nota2;
+    }
+  
+    public double calcularMedia() {
+        return (nota1 + nota2) / 2.0;
+    }
+  
+    
+    
+    //
+}
