@@ -1,0 +1,44 @@
+
+package projetoescola;
+import javax.swing.JFrame;
+public class Projetoescola {
+
+    public static void main(String[] args) throws Exception {
+    //JFrame janela = new JFrame();
+      //janela.setSize(420,420);
+      // janela.setVisible(true);
+      
+        Escola escola1 = new Escola ("Nome","","",10);
+        escola1.Associardiretor("BOLA GATO", "12", "#", "3333");
+       
+        escola1.adicionarprofessor("a", "1", "", "");
+        
+       escola1.adicionaraluno("bolinha ", "1231232131", "1", "3° ano ", "19/12/1234",12);
+        
+        escola1.adicionaraluno("rs", "2312313", "2", "aaaaa", "12313131",12);
+        
+        escola1.adicionarCurso("curso piroca1", "asdsad", "12", 12312);
+       
+        escola1.associarProfessorAoCurso("professor foda", "2", "12", "ff", "ff");
+       
+        
+        
+        
+        
+        escola1.associarAlunoAoCurso("bolinha", "1", "12", 10);
+        escola1.associarAlunoAoCurso("ximblinha", "2", "12", 50);
+        escola1.AdicionarNota("1", 10, 10);
+        escola1.AdicionarNota("2", 9, 9);
+        
+        
+        
+        //DEBUG ESCOLA 1 
+        
+        //escola1.detalhes();
+      
+       escola1.mostrarNotasETurmas();
+        
+        
+    }
+    
+}
