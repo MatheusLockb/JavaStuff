@@ -12,15 +12,11 @@
 ## Tecnologias Utilizadas
 - **Linguagem de Programação**: Java (Java SE)
 - **Interface Gráfica**: Java Swing
-- **Persistência de Dados**: (opcional) JDBC para conexão com bancos de dados
-- **Ferramentas de Build**: Maven/Gradle (dependendo das preferências do desenvolvedor)
+- **Ferramentas de Build**: Maven
 
 ## Requisitos do Sistema
 - **Java JDK 8** ou superior
-- **IDE de Desenvolvimento** (IntelliJ IDEA, Eclipse, NetBeans ou outro)
-- Dependências externas mencionadas no `pom.xml` ou `build.gradle` (caso use Maven ou Gradle)
+- **IDE de Desenvolvimento** (NetBeans)
 
-## Como Instalar e Executar
-1. **Clone o repositório**:
-   ```bash
-   git clone https://github.com/seuusuario/Escola-Java.git
+
+
